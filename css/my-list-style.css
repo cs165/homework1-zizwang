@@ -1,3 +1,132 @@
-/**
- TODO(you): Add CSS for the list that you create yourself!
-*/
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+section {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.bg {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.bg::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+#bg1::after {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/twice.jpg);
+    animation-name: animation;
+    animation-duration: 2s;
+}
+
+@keyframes animation {
+    from {
+    	opacity: 0;
+    }
+    to {
+    	opacity: 1;
+    }
+}
+
+#bg2::after {
+    background-image: url('../images/tzuyu.jpg');
+}
+
+#bg3::after {
+    background-image: url('../images/momo.jpg');
+}
+
+#bg4::after {
+    background-image: url('../images/sana.jpg');
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    max-width: 780px;
+}
+
+.outer {
+    height: 50vh;
+    background: #ffecec;
+    color: black;
+}
+
+.list {
+    text-align: justify;
+    width: 66.67%;
+    margin: 0px auto 0px auto;
+    position: relative;
+    padding-top: 60px;
+}
+
+.number {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 100%;
+}
+
+.number span {
+    position: absolute;
+    right: 40px;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+.list p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+    margin-top: 20px;
+}
+
+#profile {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+}
+
+#profile img {
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+#author {
+    font-weight: bold;
+}
+
+#updated {
+    font-style: italic;
+}

@@ -1,3 +1,117 @@
-/**
- TODO(you): Write the CSS necessary to complete HW1!
-*/
+body {
+    margin: 0px;
+    text-align: center;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url(../images/header.jpg);
+    background-size: cover;
+    height: 500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: white;
+    max-width: 780px;
+}
+
+section {
+    position: relative;
+    top: -50px;
+}
+
+#profile {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    line-height: 24px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid #efefef;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+#profile img {
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 100%;
+}
+
+#author {
+    font-weight: bold;
+}
+
+#updated {
+    font-style: italic;
+}
+
+.list {
+    text-align: left;
+    width: 66.67%;
+    margin: 0px auto 0px auto;
+    position: relative;
+    margin-bottom: 120px; 
+}
+
+.number {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 100%;
+}
+
+.number span {
+    position: absolute;
+    right: 40px;
+}
+
+.title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: rgb(51, 51, 51);
+}
+
+.list a {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #42b4d6;
+    text-decoration: none;
+}
+
+.list a:hover {
+    text-decoration: underline;
+}
+
+.list p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    color: rgb(51, 51, 51);
+    margin: 20px 0px 20px 0px;
+}
+
+.recommendation {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+.recommendation span {
+    font-weight: bold;
+}
+
+.list img {
+    width: 100%;
+}
+
+#last {
+    margin-bottom: 0px;
+}
